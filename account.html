@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Account</title>
+    <script src="account.js"></script>
+</head>
+<body>
+<script>
+    // hợp lệ
+    var account = '123abc_';
+    console.log(invalid_Account(account));
+    var account = '_abc123';
+    console.log(invalid_Account(account));
+    var account = '______';
+    console.log(invalid_Account(account));
+    var account = '123456';
+    console.log(invalid_Account(account));
+    var account = 'abcdefg';
+    console.log(invalid_Account(account));
+    // không hợp lệ
+    var account = '.@';
+    console.log(invalid_Account(account));
+    var account = '12345';
+    console.log(invalid_Account(account));
+    var account = '1234_';
+    console.log(invalid_Account(account));
+    var account = 'abcde';
+    console.log(invalid_Account(account));
+</script>
+</body>
+</html>
